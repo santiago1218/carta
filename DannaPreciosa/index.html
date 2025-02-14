@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaDeDanna<3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="img/img3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Carta Uno</h2>
+                <p>Ella es Danna, ella no sabe que me gusta y que me gustaría conocerla. 
+                    A veces la miro de lejos, 
+                    imaginando una conversación que aún no ha sucedido.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="img/img2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Card Dos</h2>
+                <p>Ella no sabe que yo sé que le gusto también. 
+                    A veces su forma de actuar la delatan un poquito</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="img/img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Carta 3</h2>
+                <p>A ella le encanta la comida, es una de las formas en que la intento enamorar.
+                     Le llevo su postre favorito, 
+                     pero aún no sé si mi plan realmente está funcionando</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('active'); // Agrega o quita la clase 'active'
+        });
+    });
+</script>
+
+
+</body>
+</html>
